@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="../public/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="whole-page">
+      <section class="hero is-small">
+        <div class="hero-body">
+          <h1 class="title is-1 heroTitle">The Tech Blog</h1>
+          <h2 class="subtitle is-4 heroTitle2">
+            Blogs from techies like you and me
+          </h2>
+        </div>
+      </section>
+
+      <header>
+        <div class="container-is-fluid">
+          <section class="topNav">
+            <nav class="navbar is-justify-content-center" role="navigation">
+              <a class="navbar=item" href="index.html">Home</a>
+              <a class="navbar=item" href="/dashboard">Dashboard</a>
+              <!-- <a class="navbar=item" href="logout">Logout</a> -->
+            </nav>
+          </section>
+        </div>
+      </header>
+
+      <div class="container is-fluid">
+        <div class="columns">
+          <div class="column is-three-fifths is-offset-one-fifth">
+            <form class="login-form">
+              <p class="loginText">Already a member? Log in here!</p>
+              <div>
+                <label for="username-login">username:</label>
+                <input type="text" id="username-login" />
+              </div>
+              <div>
+                <label for="password-login">password:</label>
+                <input type="password" id="password-login" />
+              </div>
+              <div>
+                <a class="button" type="submit">login</a>
+              </div>
+            </form>
+
+            <form class="signup-form">
+              <p class="loginText">Not a member? Sign up here!</p>
+              <div>
+                <label for="username-signup">username:</label>
+                <input type="text" id="username-signup" />
+              </div>
+              <div>
+                <label for="password-signup">password:</label>
+                <input type="password" id="password-signup" />
+              </div>
+              <div>
+                <a class="button" type="submit">signup</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!-- <div class="control">
+  <a class="button is-link" href="index.html">Go Back</a>
+</div> -->
