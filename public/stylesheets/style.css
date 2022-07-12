@@ -2,7 +2,19 @@
     text-align: -webkit-center;
 }
 
+.topNav {
+    padding-top: 10px;
+}
+
 .navBtn {
     justify-content: center;
     display: -webkit-inline-box;
+}
+
+.navbar a {
+    padding: 10px;
+}
+
+.card-area {
+    padding-top: 20px;
 }
