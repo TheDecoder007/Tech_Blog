@@ -1,0 +1,66 @@
+
+
+
+<section class="card-area">
+        <div class="container is-fluid">
+          <div class="columns">
+            <div class="column is-full">
+              <a class="card-link" href="/single-post">
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title">{{title}} by {{user.username}} on {{format_date created_at}}</p>
+                  </header>
+
+                  <div class="card-content">
+                    <div class="content">{{post.blog_body}}</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    
+
+       {{#each post.comments}}
+          <article class="message comments">
+            <div class="message-header comment">
+              <p>
+              {{user.username}} commented on {{format_date created_at}}
+            </p>
+
+            </div>
+            <div class="message-body text">
+              <p>
+                {{comment_text}}
+                </p>
+            </div>
+
+          </article>
+            {{/each}}
+
+            <form class="comment-form">
+        <div class="field">
+          <label class="label">Comment</label>
+          <div class="control">
+            <input class="input" id="comment-body" type="text" rows="4" placeholder="Comment Here...">
+          </div>
+
+        </div>
+        <div class="field is-grouped">
+
+          <div class="control">
+            <input class="button comment-form" type="submit" value="Submit"></input>
+          </div>
+      </form>
+      <div class="control">
+        <a class="button" href="/">Go Back</a>
+      </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+<script src="/javascript/comment.js"></script>

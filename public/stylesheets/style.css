@@ -18,3 +18,14 @@
 .card-area {
     padding-top: 20px;
 }
+
+.login-form{
+    margin: 10px;
+    padding: 20px;
+}
+
+.login-form p, input, label, div, a{
+    padding: 10px;
+    margin: 10px;
+    font-size: large;
+}

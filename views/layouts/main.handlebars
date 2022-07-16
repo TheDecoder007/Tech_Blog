@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="../public/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+
+  <html>
+    <body class="whole-page">
+      <section class="hero is-small">
+        <div class="hero-body">
+          <h1 class="title is-1 heroTitle">The Tech Blog</h1>
+          <h2 class="subtitle is-4 heroTitle2">
+            Blogs from techies like you and me
+          </h2>
+        </div>
+      </section>
+
+      <header>
+        <div class="container-is-fluid">
+          <section class="topNav">
+       {{#if loggedIn}}
+            <nav class="navbar is-justify-content-center" role="navigation">
+              <a class="navbar=item" href="/">Home</a>
+              <a class="navbar=item" href="/dashboard">Dashboard</a>
+              <!-- <a class="navbar=item" href="logout">Logout</a> -->
+            </nav>
+          </section>
+        {{else}}
+
+          <div class="navBtn">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button" href="/login">Log In</a>
+                <a class="button" href="/login">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          {{/if}}
+        </div>
+      </header>
+
+<main id="main">
+
+      {{{ body }}}
+    
+</main>
+
+ <footer class="container is-fluid footer">
+      <div class="content has-text-centered">
+        <p>The Tech Blog</p>
+      </div>
+    </footer>
+     {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+
+
+      </body>
+      </html

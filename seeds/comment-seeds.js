@@ -30,7 +30,7 @@ const commentdata = [
     comment_text: 'Vivamus vestibulum sagittis sapien.',
     user_id: 3,
     post_id: 6
-  }
+  },
   {
     comment_text: 'Aliquam erat volutpat. In congue.',
     user_id: 1,
