@@ -1,5 +1,5 @@
 .whole-page {
-    text-align: -webkit-center;
+    text-align:center;
 }
 
 .topNav {
@@ -8,7 +8,7 @@
 
 .navBtn {
     justify-content: center;
-    display: -webkit-inline-box;
+    /* display: -webkit-inline-box; */
 }
 
 .navbar a {
@@ -29,3 +29,7 @@
     margin: 10px;
     font-size: large;
 }
+
+/* .buttons {
+    justify-content: center;
+} */

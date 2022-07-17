@@ -1,8 +1,9 @@
+      
       <div class="container is-fluid">
-        <div class="columns">
+        <div class="columns is-12">
           <div class="column is-three-fifths is-offset-one-fifth">
             
-            <header>
+            {{!-- <header>
         <div class="container-is-fluid">
           <section class="topNav">
             <nav class="navbar is-justify-content-center" role="navigation">
@@ -11,10 +12,10 @@
             </nav>
           </section>
         </div>
-            </header>
+            </header> --}}
 
-            <form class="login-form">
               <p class="loginText">Already a member? Log in here!</p>
+            <form class="login-form">
               <div>
                 <label for="username-login">username:</label>
                 <input type="text" id="username-login" />
@@ -24,12 +25,12 @@
                 <input type="password" id="password-login" />
               </div>
               <div>
-                <a class="button" type="submit">login</a>
+                <button type="submit">login</button>
               </div>
             </form>
 
-            <form class="signup-form">
               <p class="loginText">Not a member? Sign up here!</p>
+            <form class="signup-form">
               <div>
                 <label for="username-signup">username:</label>
                 <input type="text" id="username-signup" />
@@ -39,7 +40,7 @@
                 <input type="password" id="password-signup" />
               </div>
               <div>
-                <a class="button" type="submit">signup</a>
+                <button type="submit">signup</button>
               </div>
             </form>
           </div>
