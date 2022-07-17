@@ -4,15 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tech Blog</title>
-    <link rel="stylesheet" href="../public/stylesheets/style.css" />
+    <link rel="stylesheet" href="../../public/stylesheets/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
   </head>
 
-  <html>
-    <body class="whole-page">
+  <body>
+
+    <section class="whole-page">
       <section class="hero is-small">
         <div class="hero-body">
           <h1 class="title is-1 heroTitle">The Tech Blog</h1>
@@ -25,14 +26,14 @@
       <header>
         <div class="container-is-fluid">
           <section class="topNav">
-       {{#if loggedIn}}
             <nav class="navbar is-justify-content-center" role="navigation">
               <a class="navbar=item" href="/">Home</a>
+       {{#if loggedIn}}
               <a class="navbar=item" href="/dashboard">Dashboard</a>
+          {{/if}}
               <!-- <a class="navbar=item" href="logout">Logout</a> -->
             </nav>
           </section>
-        {{else}}
 
           <div class="navBtn">
             <div class="navbar-item">
@@ -42,9 +43,9 @@
               </div>
             </div>
           </div>
-          {{/if}}
         </div>
       </header>
+      </section>
 
 <main id="main">
 
@@ -61,6 +62,5 @@
   <script src="/javascript/logout.js"></script>
   {{/if}}
 
-
-      </body>
-      </html
+  </body>
+</html>
