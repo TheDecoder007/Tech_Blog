@@ -1,14 +1,15 @@
     {{!-- <section class="whole-page"> --}}
 
+        <div class="container is-fluid ">
 {{#if posts.length}}
 
    {{#each posts as |post|}}
 <section class="card-area">
-        <div class="container is-fluid">
+  {{!-- <div class="container cardCont"> --}}
           <div class="columns">
             <div class="column is-full">
-              <a class="card-link" href="post/{{id}}">
                 <div class="card">
+              <a class="card-link" href="post/{{id}}">
                   <header class="card-header">
                     <p class="card-header-title">{{title}} by {{user.username}} on {{format_date created_at}}</p>
                   </header>
@@ -16,14 +17,15 @@
                   <div class="card-content">
                     <div class="content">{{post.blog_body}}</div>
                   </div>
-                </div>
               </a>
+                </div>
             </div>
           </div>
-        </div>
+{{!-- </div> --}}
     </section>
     {{/each}}
     
 </>
 {{/if}}
+        </div>
 

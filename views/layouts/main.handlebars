@@ -12,8 +12,8 @@
   </head>
 
   <body>
-
-    <section class="whole-page" style="text-align:center">
+    <section class="nav-section" style="text-align:center">
+    <div class="container is-fluid">
       <section class="hero is-small">
         <div class="hero-body">
           <h1 class="title is-1 heroTitle">The Tech Blog</h1>
@@ -22,9 +22,7 @@
           </h2>
         </div>
       </section>
-
       <header>
-        <div class="container-is-fluid">
           <section class="topNav">
             <nav class="navbar is-justify-content-center" role="navigation">
               <a class="navbar=item" href="/">Home</a>
@@ -34,24 +32,23 @@
               <!-- <a class="navbar=item" href="logout">Logout</a> -->
             </nav>
           </section>
-
-          <div class="navBtn">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button" href="/login">Log In</a>
-                <a class="button" href="/login">Sign Up</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </header>
 
-<main id="main">
+ 
+              <div class="topBtns">
+                <a class="button logBtn" href="/login">Log In</a>
+                <a class="button logBtn" href="/login">Sign Up</a>
+              </div>
+ 
+</div>
+      </section>
+
+
+<main class="main" id="main">
 
       {{{ body }}}
     
 </main>
-      </section>
 
  <footer class="container is-fluid footer">
       <div class="content has-text-centered">

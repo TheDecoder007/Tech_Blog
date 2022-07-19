@@ -1,5 +1,6 @@
-.whole-page {
+.nav-section {
     text-align:center;
+    padding-bottom: 20px;
 }
 
 .topNav {
@@ -8,7 +9,7 @@
 
 .navBtn {
     justify-content: center;
-    /* display: -webkit-inline-box; */
+    display: -webkit-inline-box;
 }
 
 .navbar a {
@@ -16,9 +17,17 @@
 }
 
 .card-area {
-    padding-top: 20px;
+    margin: 15px;
+    padding: 20px;
 }
 
+.card{
+margin: 20px;
+}
+
+ .btnSection{
+    padding-bottom: 20px;
+ }
 .login-form{
     margin: 10px;
     padding: 20px;
@@ -30,6 +39,21 @@
     font-size: large;
 }
 
-/* .buttons {
-    justify-content: center;
-} */
+.topBtns {
+flex: auto;
+align-items: center;
+/* display: flex; */
+flex-wrap: wrap;
+justify-content: flex-start;
+padding-bottom: 20px;
+margin-bottom: 20px;
+}
+
+.logBtn{
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.main {
+    margin: 20px;
+}
