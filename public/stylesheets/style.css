@@ -1,9 +1,21 @@
 .main {
     background-color: lightgray;
+    padding-bottom: 20px;
 }
 
+.head {
+    font-size: x-large;
+    color: grey;
+    font-weight: bold;
+    text-align: center;
+}
+
+.label {
+    font-size: large;
+}
 .cardHeader {
     background-color: grey;
+    color: black;
 }
 
 .logIn, signUp{
@@ -54,7 +66,9 @@ margin-bottom: 20px;
     box-shadow: 0 0 10px darkgray;
     border: 2px solid darkgray;
     font-weight: bold;
+    color: black;
 }
+
 .button:hover{
     box-shadow: 0 0 10px white;
 }
@@ -70,15 +84,23 @@ margin-bottom: 20px;
     background-color: lightgrey;
 }
 
-navA{
-    font-size: xx-large;
+.navA{
+    font-size: large;
     color: black;
+    padding: 20px;
+
 }
 .navA:hover {
     color: black;
-    font-weight: bolder;
+    /* font-weight: bolder; */
+    font-size: x-large;
 }
 
 .card {
     box-shadow: 0 0 10px darkgrey;
+    border-radius: 10px;
+}
+
+.commentCont {
+    padding: 10px;
 }

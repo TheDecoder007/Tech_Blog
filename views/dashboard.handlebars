@@ -1,0 +1,32 @@
+
+{{#if posts.length}}
+
+    {{#each posts as |post|}}
+
+<section class="card-area">
+        <div class="container is-fluid">
+          <div class="columns">
+            <div class="column is-full">
+              {{!-- <a class="card-link" href="post{{id}}"> --}}
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title cardHeader">{{post.title}} by {{post.user.username}} on {{format_date post.created_at}}</p>
+                  </header>
+
+                  <div class="card-content">
+                    <div class="content">{{post.blog_body}}</div>
+                  </div>
+                  <footer class="card-footer cardBtn">
+                        <a href= "/dashboard/edit/{{post.id}}" class="edit-link card-footer-item">Edit post</a>
+                      </footer>
+                </div>
+              {{!-- </a> --}}
+            </div>
+          </div>
+        </div>
+      </section>
+
+          {{/each}}
+
+</>
+{{/if}}

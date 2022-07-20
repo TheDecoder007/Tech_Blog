@@ -27,19 +27,20 @@
             <nav class="navbar is-justify-content-center" role="navigation">
               <a class="navA" href="/">Home</a>
        {{#if loggedIn}}
-              <a class="navbar-item" href="/dashboard">Dashboard</a>
-          {{/if}}
-              <!-- <a class="navbar=item" href="logout">Logout</a> -->
+              <a class="navA" href="/dashboard">My Blogs</a>
+            <a class="navA" href="/createblog">Create Blog</a>
+             <a class="navA" id="logout">Log out</a>
             </nav>
           </section>
       </header>
 
- 
+        {{else}}
               <div class="topBtns">
                 <a class="button logBtn" href="/login">Log In</a>
                 <a class="button logBtn" href="/login">Sign Up</a>
               </div>
- 
+          {{/if}}
+
 </div>
       </section>
 

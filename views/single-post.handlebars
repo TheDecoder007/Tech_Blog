@@ -22,7 +22,7 @@
       </section>
     
 
-          <div class="container is-fluid">
+          <div class="container is-fluid commentCont">
        {{#each post.comments}}
           <article class="message comments">
             <div class="message-header comment">
@@ -40,6 +40,7 @@
           </article>
 
             {{/each}}
+       {{#if loggedIn}}
 
             <form class="comment-form">
         <div class="field">
@@ -55,6 +56,7 @@
             <input class="button comment-form" type="submit" value="Submit"></input>
           </div>
       </form>
+      {{/if}}
       <div class="control">
         <a class="button" href="/">Go Back</a>
       </div>

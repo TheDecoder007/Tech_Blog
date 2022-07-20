@@ -7,8 +7,6 @@ const withAuth = require("../utils/auth");
 router.post("/", (req, res) => {
   Post.create({
     title: req.body.title,
-    description: req.body.description,
-    filename: req.body.filename,
     body: req.body.blog_body,
   })
     .then((dbPostData) => res.json(dbPostData))

@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS tech_blog;
+DROP DATABASE IF EXISTS tech_blogg;
 
-CREATE DATABASE tech_blog;
+CREATE DATABASE tech_blogg;
 
-USE tech_blog;
+USE tech_blogg;

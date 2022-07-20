@@ -12,6 +12,7 @@ router.get('/', (req, res) => {
     attributes: [
       'id',
       'title',
+      'blog_body',
       'created_at',
     ],
     include: [
