@@ -1,39 +1,18 @@
-.nav-section {
-    text-align:center;
-    padding-bottom: 20px;
-}
-
-.topNav {
-    padding-top: 10px;
-}
-
-.navBtn {
-    justify-content: center;
-    display: -webkit-inline-box;
-}
 
 .navbar a {
     padding: 10px;
 }
 
-.card-area {
-    margin: 15px;
-    padding: 20px;
+.cardHeader {
+    background-color: gray;
 }
 
-.card{
-margin: 20px;
-}
-
- .btnSection{
-    padding-bottom: 20px;
- }
-.login-form{
+.logIn{
     margin: 10px;
     padding: 20px;
 }
 
-.login-form p, input, label, div, a{
+.logIn input, label{
     padding: 10px;
     margin: 10px;
     font-size: large;
@@ -54,6 +33,6 @@ margin-bottom: 20px;
     justify-content: space-between;
 }
 
-.main {
+/* .main {
     margin: 20px;
-}
+} */

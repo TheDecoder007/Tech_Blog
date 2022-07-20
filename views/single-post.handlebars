@@ -8,7 +8,7 @@
               {{!-- <a class="card-link" href="post{{id}}"> --}}
                 <div class="card">
                   <header class="card-header">
-                    <p class="card-header-title">{{title}} by {{user.username}} on {{format_date created_at}}</p>
+                    <p class="card-header-title">{{post.title}} by {{post.user.username}} on {{format_date post.created_at}}</p>
                   </header>
 
                   <div class="card-content">
@@ -20,9 +20,9 @@
           </div>
         </div>
       </section>
-    </section>
     
 
+          <div class="container is-fluid">
        {{#each post.comments}}
           <article class="message comments">
             <div class="message-header comment">
@@ -38,6 +38,7 @@
             </div>
 
           </article>
+
             {{/each}}
 
             <form class="comment-form">
@@ -56,6 +57,7 @@
       </form>
       <div class="control">
         <a class="button" href="/">Go Back</a>
+      </div>
       </div>
         </div>
       </div>

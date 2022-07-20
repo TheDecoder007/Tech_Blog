@@ -1,31 +1,26 @@
     {{!-- <section class="whole-page"> --}}
-
+      
+<section class="card-area">
         <div class="container is-fluid ">
-{{#if posts.length}}
 
    {{#each posts as |post|}}
-<section class="card-area">
-  {{!-- <div class="container cardCont"> --}}
           <div class="columns">
             <div class="column is-full">
                 <div class="card">
-              <a class="card-link" href="post/{{id}}">
-                  <header class="card-header">
+              <a class="card-link" href="post/{{id}}" id={{id}}>
+                  <header class="card-header cardHeader">
                     <p class="card-header-title">{{title}} by {{user.username}} on {{format_date created_at}}</p>
                   </header>
 
                   <div class="card-content">
-                    <div class="content">{{post.blog_body}}</div>
+                    <div class="content">{{blog_body}}</div>
                   </div>
               </a>
                 </div>
             </div>
           </div>
-{{!-- </div> --}}
-    </section>
     {{/each}}
     
-</>
-{{/if}}
         </div>
+    </section>
 

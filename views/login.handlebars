@@ -1,21 +1,12 @@
       
       <div class="container is-fluid">
-        <div class="columns is-12">
-          <div class="column is-three-fifths is-offset-one-fifth">
+        <div class="columns is-centered">
+          <div class="column is-half" style="text-align:center;">
             
-            {{!-- <header>
-        <div class="container-is-fluid">
-          <section class="topNav">
-            <nav class="navbar is-justify-content-center" role="navigation">
-              <a class="navbar=item" href="/">Home</a>
-              <!-- <a class="navbar=item" href="logout">Logout</a> -->
-            </nav>
-          </section>
-        </div>
-            </header> --}}
 
+              <section class="logIn">
               <p class="loginText">Already a member? Log in here!</p>
-            <form class="login-form">
+            <form class="login-form" id="login-form">
               <div>
                 <label for="username-login">username:</label>
                 <input type="text" id="username-login" />
@@ -24,13 +15,15 @@
                 <label for="password-login">password:</label>
                 <input type="password" id="password-login" />
               </div>
-              <div>
-                <button type="submit">login</button>
+              <div class="topBtns">
+                <button class="button" type="submit">login</button>
               </div>
             </form>
+            </section>
 
+              <section class="signUp">
               <p class="loginText">Not a member? Sign up here!</p>
-            <form class="signup-form">
+            <form class="signup-form" id="signup-form">
               <div>
                 <label for="username-signup">username:</label>
                 <input type="text" id="username-signup" />
@@ -39,10 +32,11 @@
                 <label for="password-signup">password:</label>
                 <input type="password" id="password-signup" />
               </div>
-              <div>
-                <button type="submit">signup</button>
+              <div class="topBtns">
+                <button class="button" type="submit">signup</button>
               </div>
             </form>
+            </section>
           </div>
         </div>
       </div>

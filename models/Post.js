@@ -17,6 +17,7 @@ class Post extends Model {}
 //   'title',
 //   'created_at',
 // ],
+
 // include: [
 //   {
 //     model: models.Comment,
@@ -27,6 +28,9 @@ class Post extends Model {}
 //     }
 //   }
 // ]
+
+
+
 // });
 // });
 //   }
