@@ -21,4 +21,4 @@ A blog site for techies to post their knowledge
 ## Links
 * gitHub repository: https://github.com/TheDecoder007/Tech_Blog
 
-* Heroku deployment: 
+* Heroku deployment: https://aqueous-waters-42896.herokuapp.com/
